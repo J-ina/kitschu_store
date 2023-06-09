@@ -34,6 +34,10 @@ function products_HTML (product) {
     </div>`;
 }
 
+let active_btn_click = document.querySelector(".active");
+
+active_btn_click.click();
+
 // products filtering
 function ctg_click (e, products) {
   const dataset = e.target.dataset;
