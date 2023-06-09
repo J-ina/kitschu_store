@@ -1,0 +1,91 @@
+<!DOCTYPE html5>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>키치유</title>
+  <!-- 네이버 폰트 CDN -->
+  <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet">
+  <!-- 부트스트랩 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!-- 외부정의 CSS -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/product_list.css">
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="img/kitschu.png" alt="kitschu logo"></a>
+    </div>
+    <div class="menu_btn">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <div class="snb">
+      <div class="close_btn">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <form class="search clear">
+        <input type="text">
+        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+      <ul class="gnb">
+        <li class="all_btn" data-value="all product">ALL PRODUCT</li>
+        <li class="new_btn" data-key="etc" data-value="new">NEW</li>
+        <li class="ctg_btn" data-key="ctg" data-value="outer">OUTER</li>
+        <li class="ctg_btn" data-key="ctg" data-value="top">TOP</li>
+        <li class="ctg_btn" data-key="ctg" data-value="bottom">BOTTOM</li>
+        <li class="ctg_btn" data-key="ctg" data-value="skirt">SKIRT</li>
+        <li class="ctg_btn" data-key="ctg" data-value="set-up">SET-UP</li>
+        <li class="ctg_btn" data-key="ctg" data-value="one-piece">ONE-PIECE</li>
+      </ul>
+      <ul class="user_menu clear">
+        <li><a href="#">JOIN</a></li>
+        <li><a href="#">LOGIN</a></li>
+        <li><a href="#">ORDER</a></li>
+        <li><a href="#">CART</a></li>
+        <li><a href="#">COMMUNITY</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ctg -->
+  <div class="ctg">
+    <h2 class="ctg_title">ALL PRODUCT</h2>
+  </div>
+  <!-- products -->
+  <div class="container">
+    <div class="row"></div>
+  </div>
+
+  <!-- footer -->
+  <footer>
+    <div class="company_info">
+      <h1>키치유</h1>
+      <p>
+        대표 : OOO &#124; 개인정보보호책임자 : OOO &#124; 주소 : 서울특별시 강서구 곰달래로 00 &#124; 전화 : 02-0000-0000<br>
+        사업자등록번호 : 718-00-00000 &#124; 통신판매업 신고번호 2023-서울강서-0000
+      </p>
+      <ul class="fnb clear">
+        <li><a href="#">이용약관</a></li>
+        <li><a href="#">개인정보처리방침</a></li>
+        <li><a href="#">사업자정보확인</a></li>
+      </ul>
+    </div>
+    <div class="sns_btn">
+      <i class="fa-brands fa-instagram"></i>
+    </div>
+  </footer>
+
+  <!-- 폰트어썸 CDN -->
+  <script src="https://kit.fontawesome.com/307bbd1680.js" crossorigin="anonymous"></script>
+  <!-- 부트스트랩 JS CDN-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <!-- 외부정의 JS -->
+  <script src="js/products_list.js"></script>
+</body>
+</html>

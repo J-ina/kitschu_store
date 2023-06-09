@@ -1,0 +1,80 @@
+{
+  "products": [
+    {
+      "ctg": "one-piece",
+      "img": "img/product/[SUM]OP000002_black.jpg",
+      "name": "BACK CORSET COLLAR ONE-PIECE",
+      "price": "24,700",
+      "etc": "new"
+    },
+    {
+      "ctg": "top",
+      "img": "img/product/[SUM]SH000001_ivory.jpg",
+      "name": "ROSE CUFFS SEE-THROUGH SHIRTS",
+      "price": "21,000",
+      "etc": "new"
+    },
+    {
+      "ctg": "bottom",
+      "img": "img/product/[SUM]PA000001_black.jpg",
+      "name": "SUPER WIDE LONG PANTS",
+      "price": "26,600",
+      "etc": "new"
+    },
+    {
+      "ctg": "top",
+      "img": "img/product/[SUM]TS000003_white.jpg",
+      "name": "BASKETBALL CROSS CROP TOP",
+      "price": "18,400",
+      "etc": "new"
+    },
+    {
+      "ctg": "skirt",
+      "img": "img/product/[SUM]SM000002_blue.jpg",
+      "name": "TIE-DYE CARGO SKIRT",
+      "price": "24,000"
+    },
+    {
+      "ctg": "top",
+      "img": "img/product/[SUM]TS000002_black.jpg",
+      "name": "DENIM PATCH CROP T-SHIRTS",
+      "price": "16,800"
+    },
+    {
+      "ctg": "skirt",
+      "img": "img/product/[SUM]SM000003_beige.jpg",
+      "name": "CRISPY CANCAN SKIRT",
+      "price": "19,800"
+    },
+    {
+      "ctg": "one-piece",
+      "img": "img/product/[SUM]OP000001_purple.jpg",
+      "name": "RIBBON LACE BUSTIER ONE-PIECE",
+      "price": "19,800"
+    },
+    {
+      "ctg": "skirt",
+      "img": "img/product/[SUM]SM000001_bk.jpg",
+      "name": "DOUBLE SLIT SATEEN PANTS SKIRT",
+      "price": "42,000"
+    },
+    {
+      "ctg": "bottom",
+      "img": "img/product/[SUM]PA000002_khaki.jpg",
+      "name": "WIDE BANDING CARGO PANTS",
+      "price": "32,400"
+    },
+    {
+      "ctg": "outer",
+      "img": "img/product/[SUM]MT000002_gr.jpg",
+      "name": "SWEAT BOLERO ZIP-UP",
+      "price": "21,000"
+    },
+    {
+      "ctg": "set-up",
+      "img": "img/product/[SUM]SE000001_iv.jpg",
+      "name": "COLORING WAFFLE TWEED SET-UP",
+      "price": "42,000"
+    }
+  ]
+}
