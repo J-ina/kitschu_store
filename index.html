@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html5>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
@@ -18,10 +18,12 @@
 
 <body>
   <!-- header -->
-  <header include-html="header.html"></header>
-  <script src="js/includeHTML.js"></script>
+  <header include-html="header.html">
+
+  </header>
 
   <!-- main_banner -->
+  <div onclick="location.href='product_list.html'" id="cursor">◀ GO SHOP</div>
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -57,6 +59,8 @@
   <!-- 부트스트랩 JS CDN-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   <!-- 외부정의 JS -->
+  <script src="js/include_HTML.js"></script>
+  <script src="js/custom.js"></script>
   <script src="js/products_list.js"></script>
 </body>
 </html>

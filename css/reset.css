@@ -27,6 +27,7 @@ body {
   color: var(--color-black);
   font-size: 12px;
 }
+body::-webkit-scrollbar {display: none;}
 i {
   color: var(--color-black);
   font-size: 30px;

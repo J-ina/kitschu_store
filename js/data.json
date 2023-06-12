@@ -2,78 +2,102 @@
   "products": [
     {
       "ctg": "one-piece",
-      "img": "img/product/[SUM]OP000002_black.jpg",
+      "img": "img/product/OP000002.jpg",
       "name": "BACK CORSET COLLAR ONE-PIECE",
       "price": "24,700",
+      "color": "IVORY",
+      "size": "F",
       "etc": "new"
     },
     {
       "ctg": "top",
-      "img": "img/product/[SUM]SH000001_ivory.jpg",
+      "img": "img/product/SH000001.jpg",
       "name": "ROSE CUFFS SEE-THROUGH SHIRTS",
       "price": "21,000",
+      "color": "BLACK",
+      "size": "F",
       "etc": "new"
     },
     {
       "ctg": "bottom",
-      "img": "img/product/[SUM]PA000001_black.jpg",
+      "img": "img/product/PA000001.jpg",
       "name": "SUPER WIDE LONG PANTS",
       "price": "26,600",
+      "color": "WHITE",
+      "size": "SML",
       "etc": "new"
     },
     {
       "ctg": "top",
-      "img": "img/product/[SUM]TS000003_white.jpg",
+      "img": "img/product/TS000003.jpg",
       "name": "BASKETBALL CROSS CROP TOP",
       "price": "18,400",
+      "color": "WHITE",
+      "size": "F",
       "etc": "new"
     },
     {
       "ctg": "skirt",
-      "img": "img/product/[SUM]SM000002_blue.jpg",
+      "img": "img/product/SM000002.jpg",
       "name": "TIE-DYE CARGO SKIRT",
+      "color": "BLUE",
+      "size": "F",
       "price": "24,000"
     },
     {
       "ctg": "top",
-      "img": "img/product/[SUM]TS000002_black.jpg",
+      "img": "img/product/TS000002.jpg",
       "name": "DENIM PATCH CROP T-SHIRTS",
+      "color": "BLACK",
+      "size": "F",
       "price": "16,800"
     },
     {
       "ctg": "skirt",
-      "img": "img/product/[SUM]SM000003_beige.jpg",
+      "img": "img/product/SM000003.jpg",
       "name": "CRISPY CANCAN SKIRT",
+      "color": "BEIGE",
+      "size": "F",
       "price": "19,800"
     },
     {
       "ctg": "one-piece",
-      "img": "img/product/[SUM]OP000001_purple.jpg",
+      "img": "img/product/OP000001.jpg",
       "name": "RIBBON LACE BUSTIER ONE-PIECE",
+      "color": "PURPLE",
+      "size": "F",
       "price": "19,800"
     },
     {
       "ctg": "skirt",
-      "img": "img/product/[SUM]SM000001_bk.jpg",
+      "img": "img/product/SM000001.jpg",
       "name": "DOUBLE SLIT SATEEN PANTS SKIRT",
+      "color": "BLACK",
+      "size": "F",
       "price": "42,000"
     },
     {
       "ctg": "bottom",
-      "img": "img/product/[SUM]PA000002_khaki.jpg",
+      "img": "img/product/PA000002.jpg",
       "name": "WIDE BANDING CARGO PANTS",
+      "color": "KHAKI",
+      "size": "SML",
       "price": "32,400"
     },
     {
       "ctg": "outer",
-      "img": "img/product/[SUM]MT000002_gr.jpg",
+      "img": "img/product/MT000002.jpg",
       "name": "SWEAT BOLERO ZIP-UP",
+      "color": "GRAY",
+      "size": "F",
       "price": "21,000"
     },
     {
       "ctg": "set-up",
-      "img": "img/product/[SUM]SE000001_iv.jpg",
+      "img": "img/product/SE000001.jpg",
       "name": "COLORING WAFFLE TWEED SET-UP",
+      "color": "IVORY",
+      "size": "F",
       "price": "42,000"
     }
   ]

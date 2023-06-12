@@ -29,3 +29,85 @@
 .container .col > h4 {
   font-size: 12px;
 }
+
+/* modal */
+.modal-body > div {
+  float: left;
+}
+
+.modal_img {
+  overflow: auto;
+  width: 50%; height: 600px;
+}
+.modal_img::-webkit-scrollbar {width:1px;}
+.modal_img::-webkit-scrollbar-thumb {
+  background-color: var(--color-point);
+}
+.modal_img::-webkit-scrollbar-track {background-color: #eee;}
+.modal_img > .p_img {
+  width: 100%;
+  object-fit: cover;
+}
+.modal_img > .p_img_1 {
+  width: 100%;
+}
+
+.modal-content {width: 1200px;}
+
+.modal_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  font-size: 20px;
+  padding: 50px;
+}
+
+.p_title {
+  margin-bottom: 30px;
+  line-height: 1;
+}
+.p_title .p_name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.p_option > p {margin: 0;}
+.p_option .color {
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+.p_option > .size {margin-bottom: 20px;}
+.p_option input {width: 0; height: 0;}
+.p_option input + label {
+  padding: 0 10px;
+  margin-right: 10px;
+  border: 1px solid var(--color-gray);
+  cursor: pointer;
+}
+.p_option input:checked + label {
+  border: 1px solid var(--color-point);
+}
+
+.p_option > a {
+  color: var(--color-gray);
+  line-height: 2;
+}
+.p_option > .size_info, .product_info {display: none;}
+.p_option > .active {display: block;}
+.p_option > .size_info {margin-bottom: 10px;}
+.p_option th, td {
+  padding: 5px;
+  border: 1px solid var(--color-gray);
+  font-size: 12px;
+}
+.p_option > .product_info {font-size: 12px;}
+
+.p_btn {margin-top: 50px;}
+.modal_info > .p_btn > button {
+  width: 180px; height: 80px;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gray);
+  font-weight: bold;
+}
+.modal_info > .p_btn > button:hover {color: var(--color-point);}
