@@ -7,8 +7,8 @@ let posY = 0;
 
 document.addEventListener('DOMContentLoaded', () => {
   banner.onmousemove = function (e) {
-    posX = e.clientX + "px";
-    posY = e.clientY + "px";
+    posX = e.clientX + 15 + "px";
+    posY = e.clientY + 15 + "px";
     new_cursor.style.left = posX;
     new_cursor.style.top = posY;
   }

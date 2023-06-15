@@ -40,7 +40,7 @@ function display_products (products) {
 // products create HTML
 function product_HTML (product) {
   return `
-    <div class="col col-xxl-2 col-xl-3 col-lg-4 col-md-4 col-sm-6">
+    <div class="col col-xxl-2 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
       <img class="product_img" src="${product.img}" alt="${product.ctg}" data-color="${product.color}" data-size=${product.size} data-bs-toggle="modal" data-bs-target="#staticBackdrop">
       <h4 class="product_name">${product.name}</h4>
       <p class="product_price">&#8361; ${product.price}</p>
@@ -76,6 +76,7 @@ function gnb_btn_active (e) {
 // snb event listeners
 function event_listeners (products) {
   const btn = document.querySelectorAll(".gnb");
+  const snb = document.querySelector('.snb');
   const all_btn = document.querySelector(".all_btn");
   const new_btn = document.querySelector(".new_btn");
   const ctg_btn = document.querySelectorAll(".ctg_btn");
@@ -83,6 +84,7 @@ function event_listeners (products) {
   btn.forEach(el => el.addEventListener('click', e => {
     gnb_btn_active (e)
     title_change(e);
+    snb.style.right = '-500px';
   }));
   all_btn.addEventListener('click', () => display_products(products));
   new_btn.addEventListener('click', e => ctg_click(e, products));
@@ -156,7 +158,7 @@ function size_option (product) {
   };
 };
 
-// info open btn
+// info btn active
 function info_btn_active () {
   const size_info_btn = document.querySelector(".size_info_btn");
   const product_info_btn = document.querySelector(".product_info_btn");

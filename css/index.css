@@ -4,7 +4,7 @@
   color: var(--color-point);
   font-size: 20px;
   font-weight: bold;
-  z-index: 50;
+  z-index: 999;
   cursor: none;
 }
 #carouselExampleIndicators {
@@ -15,8 +15,11 @@
   height: 100vh;
   cursor: none;
 }
-.carousel-item {height: 100%;}
-.carousel-item > img {
+.carousel-item {
   height: 100%;
-  object-fit: cover;
+  background-size: cover;
+  background-position: center;
 }
+.carousel-item:nth-child(1) {background-image: url(../img/banner_1.jpg);}
+.carousel-item:nth-child(2) {background-image: url(../img/banner_2.jpg);}
+.carousel-item:nth-child(3) {background-image: url(../img/banner_3.jpg);}

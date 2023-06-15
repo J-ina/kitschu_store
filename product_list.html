@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/product_list.css">
   <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
@@ -34,7 +35,7 @@
         <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
       </form>
       <ul class="gnb">
-        <li class="all_btn">ALL PRODUCT</li>
+        <li class="all_btn" data-value="all product">ALL PRODUCT</li>
         <li class="new_btn" data-key="etc" data-value="new">NEW</li>
         <li class="ctg_btn" data-key="ctg" data-value="outer">OUTER</li>
         <li class="ctg_btn" data-key="ctg" data-value="top">TOP</li>
@@ -63,7 +64,7 @@
     </div>
     <!-- Modal -->
     <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog modal-xl">
+      <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-body clear">
             <div class="modal_img">
