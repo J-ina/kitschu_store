@@ -1,4 +1,4 @@
-// mouse cursor change
+// 마우스 커서 커스텀
 const docE = document.documentElement;
 const banner = document.querySelector(".carousel-inner");
 const new_cursor = document.querySelector("#cursor");

@@ -8,7 +8,7 @@ load_products ()
   })
   .catch(console.log);
 
-// snb_btn active
+// 사이드바 버튼 이벤트
 function snb_btn_active () {
   const snb_btn = document.querySelector('.menu_btn > i');
   const snb = document.querySelector('.snb');
@@ -16,28 +16,28 @@ function snb_btn_active () {
 
   snb_btn.addEventListener('click', () => {
     snb.style.right = '0px';
-  })
+  });
   snb_close_btn.addEventListener('click', () => {
     snb.style.right = '-500px';
-  })
-};
+  });
+}
 
-// json data load
+// json 데이터 가져오기
 function load_products () {
   return fetch("js/data.json")
     .then((response) => response.json())
     .then((json) => json.products);
-};
+}
 
-// products HTML load
+// 상품 HTML 가져오기
 function display_products (products) {
   const container = document.querySelector(".row");
 
   container.innerHTML = products.map(product => product_HTML(product)).join("");
   modal_event_listener (products);
-};
+}
 
-// products create HTML
+// 상품 HTML 생성
 function product_HTML (product) {
   return `
     <div class="col col-xxl-2 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
@@ -45,9 +45,9 @@ function product_HTML (product) {
       <h4 class="product_name">${product.name}</h4>
       <p class="product_price">&#8361; ${product.price}</p>
     </div>`;
-};
+}
 
-// products filtering
+// 상품 카테고리 필터링
 function ctg_click (e, products) {
   const dataset = e.target.dataset;
   const key = dataset.key;
@@ -55,25 +55,19 @@ function ctg_click (e, products) {
 
   if(key == null || value == null) {return}
   display_products(products.filter(product => product[key] == value));
-};
+}
 
-// ctg_title change
+// 상단 카테고리명 변경 및 active 클래스 추가
 function title_change (e) {
+  const gnb_btn = document.querySelectorAll(".gnb > li");
   const ctg_title = document.querySelector(".ctg_title");
 
   ctg_title.innerHTML = e.target.dataset.value;
-  e.target.classList.add('active');
-};
-
-// ctg_btn active
-function gnb_btn_active (e) {
-  const gnb_btn = document.querySelectorAll(".gnb > li");
-
   gnb_btn.forEach(el => el.classList.remove('active'));
   e.target.classList.add('active');
-};
+}
 
-// snb event listeners
+// 사이드바 메뉴 이벤트 리스너
 function event_listeners (products) {
   const btn = document.querySelectorAll(".gnb");
   const snb = document.querySelector('.snb');
@@ -82,16 +76,15 @@ function event_listeners (products) {
   const ctg_btn = document.querySelectorAll(".ctg_btn");
 
   btn.forEach(el => el.addEventListener('click', e => {
-    gnb_btn_active (e)
     title_change(e);
     snb.style.right = '-500px';
   }));
   all_btn.addEventListener('click', () => display_products(products));
   new_btn.addEventListener('click', e => ctg_click(e, products));
   ctg_btn.forEach(el => el.addEventListener('click', e => ctg_click(e, products)));
-};
+}
 
-// modal data load
+// 상품 상세 모달 데이터 가져오기
 function modal_data (product) {
   const p_name = document.querySelector(".p_name");
   const product_name = product.querySelector(".product_name").innerText;
@@ -128,14 +121,14 @@ function modal_data (product) {
   size_option (product);
 }
 
-// products event listeners
+// 상품리스트 이벤트 리스너
 function modal_event_listener () {
   const products_img = document.querySelectorAll(".col");
 
   products_img.forEach(product => product.addEventListener('click', () => modal_data (product)));
 }
 
-// product size option load
+// 상품 사이즈 옵션 가져오기
 function size_option (product) {
   const p_size = document.querySelector(".p_option > .size");
   const product_size = product.querySelector(".product_img").dataset.size;
@@ -158,7 +151,7 @@ function size_option (product) {
   };
 };
 
-// info btn active
+// 사이즈 및 상품 정보 버튼 이벤트
 function info_btn_active () {
   const size_info_btn = document.querySelector(".size_info_btn");
   const product_info_btn = document.querySelector(".product_info_btn");
@@ -167,13 +160,13 @@ function info_btn_active () {
 
   size_info_btn.addEventListener('click', () => {
     size_info.classList.toggle("active");
-  })
+  });
   product_info_btn.addEventListener('click', () => {
     product_info.classList.toggle("active");
-  })
+  });
 }
 
-// modal_img scroll init
+// 모달 상세 이미지 스크롤 위치 초기화
 function modal_scroll_top () {
   const modal_img = document.querySelector(".modal_img");
   const modal_top = modal_img.getBoundingClientRect().top;
